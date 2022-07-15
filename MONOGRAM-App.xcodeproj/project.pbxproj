@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44666471287982A6002209D6 /* MONOGRAM_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44666470287982A6002209D6 /* MONOGRAM_AppApp.swift */; };
+		4420E114288149E5008E6877 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4420E113288149E5008E6877 /* User.swift */; };
+		4420E11728814B2E008E6877 /* MockParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4420E11628814B2E008E6877 /* MockParser.swift */; };
+		44666471287982A6002209D6 /* MONOGRAM_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44666470287982A6002209D6 /* MONOGRAM_App.swift */; };
 		44666473287982A6002209D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44666472287982A6002209D6 /* ContentView.swift */; };
 		44666475287982A8002209D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44666474287982A8002209D6 /* Assets.xcassets */; };
 		44666478287982A8002209D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44666477287982A8002209D6 /* Preview Assets.xcassets */; };
 		44666482287982A8002209D6 /* MONOGRAM_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44666481287982A8002209D6 /* MONOGRAM_AppTests.swift */; };
 		4466648C287982A8002209D6 /* MONOGRAM_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466648B287982A8002209D6 /* MONOGRAM_AppUITests.swift */; };
 		4466648E287982A8002209D6 /* MONOGRAM_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466648D287982A8002209D6 /* MONOGRAM_AppUITestsLaunchTests.swift */; };
+		4466649B28798588002209D6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466649A28798588002209D6 /* HomeView.swift */; };
+		44DD120D28813BDF00CD3CDA /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 44DD120C28813BDF00CD3CDA /* User.json */; };
+		44DD12112881415C00CD3CDA /* Rooms.json in Resources */ = {isa = PBXBuildFile; fileRef = 44DD12102881415C00CD3CDA /* Rooms.json */; };
+		44DD1214288144E200CD3CDA /* GameRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DD1213288144E200CD3CDA /* GameRooms.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4420E113288149E5008E6877 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4420E11628814B2E008E6877 /* MockParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockParser.swift; sourceTree = "<group>"; };
 		4466646D287982A6002209D6 /* MONOGRAM-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MONOGRAM-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		44666470287982A6002209D6 /* MONOGRAM_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MONOGRAM_AppApp.swift; sourceTree = "<group>"; };
+		44666470287982A6002209D6 /* MONOGRAM_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MONOGRAM_App.swift; sourceTree = "<group>"; };
 		44666472287982A6002209D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		44666474287982A8002209D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44666477287982A8002209D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -44,6 +52,10 @@
 		44666487287982A8002209D6 /* MONOGRAM-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MONOGRAM-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4466648B287982A8002209D6 /* MONOGRAM_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MONOGRAM_AppUITests.swift; sourceTree = "<group>"; };
 		4466648D287982A8002209D6 /* MONOGRAM_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MONOGRAM_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4466649A28798588002209D6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		44DD120C28813BDF00CD3CDA /* User.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = User.json; sourceTree = "<group>"; };
+		44DD12102881415C00CD3CDA /* Rooms.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Rooms.json; sourceTree = "<group>"; };
+		44DD1213288144E200CD3CDA /* GameRooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRooms.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4420E11528814B21008E6877 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4420E11628814B2E008E6877 /* MockParser.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		44666464287982A5002209D6 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +114,12 @@
 		4466646F287982A6002209D6 /* MONOGRAM-App */ = {
 			isa = PBXGroup;
 			children = (
-				44666470287982A6002209D6 /* MONOGRAM_AppApp.swift */,
+				4420E11528814B21008E6877 /* Network */,
+				44DD1212288144CD00CD3CDA /* Model */,
+				44DD120B28813BBC00CD3CDA /* Mock */,
+				44666470287982A6002209D6 /* MONOGRAM_App.swift */,
 				44666472287982A6002209D6 /* ContentView.swift */,
+				4466649A28798588002209D6 /* HomeView.swift */,
 				44666474287982A8002209D6 /* Assets.xcassets */,
 				44666476287982A8002209D6 /* Preview Content */,
 			);
@@ -125,6 +149,24 @@
 				4466648D287982A8002209D6 /* MONOGRAM_AppUITestsLaunchTests.swift */,
 			);
 			path = "MONOGRAM-AppUITests";
+			sourceTree = "<group>";
+		};
+		44DD120B28813BBC00CD3CDA /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				44DD120C28813BDF00CD3CDA /* User.json */,
+				44DD12102881415C00CD3CDA /* Rooms.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		44DD1212288144CD00CD3CDA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44DD1213288144E200CD3CDA /* GameRooms.swift */,
+				4420E113288149E5008E6877 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +273,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44DD120D28813BDF00CD3CDA /* User.json in Resources */,
 				44666478287982A8002209D6 /* Preview Assets.xcassets in Resources */,
+				44DD12112881415C00CD3CDA /* Rooms.json in Resources */,
 				44666475287982A8002209D6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +301,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4420E11728814B2E008E6877 /* MockParser.swift in Sources */,
+				4466649B28798588002209D6 /* HomeView.swift in Sources */,
 				44666473287982A6002209D6 /* ContentView.swift in Sources */,
-				44666471287982A6002209D6 /* MONOGRAM_AppApp.swift in Sources */,
+				44DD1214288144E200CD3CDA /* GameRooms.swift in Sources */,
+				4420E114288149E5008E6877 /* User.swift in Sources */,
+				44666471287982A6002209D6 /* MONOGRAM_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
