@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "code" : "String",
+        "title": "방제",
+        "type": "팀전",
+        "level": 15,
+        "max_participant": 2,
+        "password": "mockpasswd",
+        "created_user_id": ""
+    },
+    {
+        "id": 2,
+        "code" : "String",
+        "title": "방제1",
+        "type": "팀전",
+        "level": 20,
+        "max_participant": 4,
+        "password": null,
+        "created_user_id": ""
+    },
+    {
+        "id": 3,
+        "code" : "String",
+        "title": "방제2",
+        "type": "팀전",
+        "level": 25,
+        "max_participant": 8,
+        "password": null,
+        "created_user_id": ""
+    },
+    {
+        "id": 1,
+        "code" : "String",
+        "title": "방제",
+        "type": "팀전",
+        "level": 15,
+        "max_participant": 2,
+        "password": "mockpasswd",
+        "created_user_id": ""
+    },
+    {
+        "id": 2,
+        "code" : "String",
+        "title": "방제1",
+        "type": "팀전",
+        "level": 20,
+        "max_participant": 4,
+        "password": null,
+        "created_user_id": ""
+    },
+    {
+        "id": 3,
+        "code" : "String",
+        "title": "방제2",
+        "type": "팀전",
+        "level": 25,
+        "max_participant": 8,
+        "password": null,
+        "created_user_id": ""
+    },
+]
