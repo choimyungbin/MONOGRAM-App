@@ -1,0 +1,27 @@
+[
+    {
+        "id" : 1,
+        "login_id" : "mockid",
+        "password" : "mockpasswd",
+        "경험치" : 1000,
+        "레벨" : 30,
+        "current_game_room_id": ""
+    },
+    {
+        "id" : 2,
+        "login_id" : "mockid1",
+        "password" : "mockpasswd1",
+        "경험치" : 100,
+        "레벨" : 10,
+        "current_game_room_id": ""
+    },
+    {
+        "id" : 3,
+        "login_id" : "mockid2",
+        "password" : "mockpasswd2",
+        "경험치" : 500,
+        "레벨" : 20,
+        "current_game_room_id": ""
+    },
+
+]

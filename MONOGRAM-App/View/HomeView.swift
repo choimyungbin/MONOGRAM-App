@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
+    private var rooms : [Room] = Room.allRooms
     var body: some View {
             VStack{
                 HStack{
@@ -19,18 +20,25 @@ struct HomeView: View {
                         .frame(width: 40, height: 40)
                         .clipShape(Circle())
                 }
-                List(0..<100) { row in
-                                NavigationLink(destination: Text("Detail \(row)")) {
-                                    HStack(spacing: 200){
-                                        VStack{
-                                            Text("방 \(row)")
-                                            Text("2/8")
-                                        }
-                                        Text("15*15")
+                NavigationView{
+                    List{
+                        ForEach(rooms, id: \.id){
+                            room in NavigationLink(destination: DetailView(room: room)){
+                                
+                                HStack(){
+                                    Text("\(room.title)").font(.system(size: 20))
+                                    Image("locked_icon")
+                                        .resizable().scaledToFit().frame(width: 20, height: 20).hidden(room.password)
+                                    Spacer()
+                                    VStack(){
+                                        Text("\(room.level)*\(room.level)")
+                                        Text("0/\(room.maxParticipant)")
                                     }
                                 }
-                                
-                            }
+                            }.padding(10)
+                        }
+                    }
+                }
                 HStack{
                     Button{
                         
@@ -52,7 +60,11 @@ struct HomeView: View {
         }
     }
 }
-
+extension View{
+    func hidden(_ shouldHide: String?) -> some View {
+        opacity(shouldHide != nil ? 0 : 1)
+    }
+}
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()

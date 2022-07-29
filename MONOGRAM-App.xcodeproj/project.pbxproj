@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4420E114288149E5008E6877 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4420E113288149E5008E6877 /* User.swift */; };
-		4420E11728814B2E008E6877 /* MockParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4420E11628814B2E008E6877 /* MockParser.swift */; };
 		44666471287982A6002209D6 /* MONOGRAM_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44666470287982A6002209D6 /* MONOGRAM_App.swift */; };
 		44666473287982A6002209D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44666472287982A6002209D6 /* ContentView.swift */; };
 		44666475287982A8002209D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44666474287982A8002209D6 /* Assets.xcassets */; };
@@ -17,9 +16,10 @@
 		4466648C287982A8002209D6 /* MONOGRAM_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466648B287982A8002209D6 /* MONOGRAM_AppUITests.swift */; };
 		4466648E287982A8002209D6 /* MONOGRAM_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466648D287982A8002209D6 /* MONOGRAM_AppUITestsLaunchTests.swift */; };
 		4466649B28798588002209D6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466649A28798588002209D6 /* HomeView.swift */; };
+		4478748628935CF600DCE189 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4478748528935CF600DCE189 /* DetailView.swift */; };
 		44DD120D28813BDF00CD3CDA /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 44DD120C28813BDF00CD3CDA /* User.json */; };
 		44DD12112881415C00CD3CDA /* Rooms.json in Resources */ = {isa = PBXBuildFile; fileRef = 44DD12102881415C00CD3CDA /* Rooms.json */; };
-		44DD1214288144E200CD3CDA /* GameRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DD1213288144E200CD3CDA /* GameRooms.swift */; };
+		44DD1214288144E200CD3CDA /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DD1213288144E200CD3CDA /* Room.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,6 @@
 
 /* Begin PBXFileReference section */
 		4420E113288149E5008E6877 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		4420E11628814B2E008E6877 /* MockParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockParser.swift; sourceTree = "<group>"; };
 		4466646D287982A6002209D6 /* MONOGRAM-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MONOGRAM-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44666470287982A6002209D6 /* MONOGRAM_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MONOGRAM_App.swift; sourceTree = "<group>"; };
 		44666472287982A6002209D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,9 +52,10 @@
 		4466648B287982A8002209D6 /* MONOGRAM_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MONOGRAM_AppUITests.swift; sourceTree = "<group>"; };
 		4466648D287982A8002209D6 /* MONOGRAM_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MONOGRAM_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4466649A28798588002209D6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4478748528935CF600DCE189 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		44DD120C28813BDF00CD3CDA /* User.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = User.json; sourceTree = "<group>"; };
 		44DD12102881415C00CD3CDA /* Rooms.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Rooms.json; sourceTree = "<group>"; };
-		44DD1213288144E200CD3CDA /* GameRooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRooms.swift; sourceTree = "<group>"; };
+		44DD1213288144E200CD3CDA /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,14 +83,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4420E11528814B21008E6877 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				4420E11628814B2E008E6877 /* MockParser.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
 		44666464287982A5002209D6 = {
 			isa = PBXGroup;
 			children = (
@@ -114,12 +106,10 @@
 		4466646F287982A6002209D6 /* MONOGRAM-App */ = {
 			isa = PBXGroup;
 			children = (
-				4420E11528814B21008E6877 /* Network */,
-				44DD1212288144CD00CD3CDA /* Model */,
+				448AF8A82893816300A19E00 /* View */,
+				44DD1212288144CD00CD3CDA /* Models */,
 				44DD120B28813BBC00CD3CDA /* Mock */,
 				44666470287982A6002209D6 /* MONOGRAM_App.swift */,
-				44666472287982A6002209D6 /* ContentView.swift */,
-				4466649A28798588002209D6 /* HomeView.swift */,
 				44666474287982A8002209D6 /* Assets.xcassets */,
 				44666476287982A8002209D6 /* Preview Content */,
 			);
@@ -151,6 +141,16 @@
 			path = "MONOGRAM-AppUITests";
 			sourceTree = "<group>";
 		};
+		448AF8A82893816300A19E00 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				44666472287982A6002209D6 /* ContentView.swift */,
+				4466649A28798588002209D6 /* HomeView.swift */,
+				4478748528935CF600DCE189 /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		44DD120B28813BBC00CD3CDA /* Mock */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,13 +160,13 @@
 			path = Mock;
 			sourceTree = "<group>";
 		};
-		44DD1212288144CD00CD3CDA /* Model */ = {
+		44DD1212288144CD00CD3CDA /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				44DD1213288144E200CD3CDA /* GameRooms.swift */,
+				44DD1213288144E200CD3CDA /* Room.swift */,
 				4420E113288149E5008E6877 /* User.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,10 +301,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4420E11728814B2E008E6877 /* MockParser.swift in Sources */,
 				4466649B28798588002209D6 /* HomeView.swift in Sources */,
 				44666473287982A6002209D6 /* ContentView.swift in Sources */,
-				44DD1214288144E200CD3CDA /* GameRooms.swift in Sources */,
+				4478748628935CF600DCE189 /* DetailView.swift in Sources */,
+				44DD1214288144E200CD3CDA /* Room.swift in Sources */,
 				4420E114288149E5008E6877 /* User.swift in Sources */,
 				44666471287982A6002209D6 /* MONOGRAM_App.swift in Sources */,
 			);
@@ -377,6 +377,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9F2W2669AB;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -393,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -437,6 +438,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9F2W2669AB;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -447,7 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
