@@ -30,7 +30,7 @@
         "created_user_id": ""
     },
     {
-        "id": 1,
+        "id": 4,
         "code" : "String",
         "title": "방제",
         "type": "팀전",
@@ -40,7 +40,7 @@
         "created_user_id": ""
     },
     {
-        "id": 2,
+        "id": 5,
         "code" : "String",
         "title": "방제1",
         "type": "팀전",
@@ -50,7 +50,7 @@
         "created_user_id": ""
     },
     {
-        "id": 3,
+        "id": 6,
         "code" : "String",
         "title": "방제2",
         "type": "팀전",

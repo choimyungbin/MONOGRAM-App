@@ -20,25 +20,7 @@ struct HomeView: View {
                         .frame(width: 40, height: 40)
                         .clipShape(Circle())
                 }
-                NavigationView{
-                    List{
-                        ForEach(rooms, id: \.id){
-                            room in NavigationLink(destination: DetailView(room: room)){
-                                
-                                HStack(){
-                                    Text("\(room.title)").font(.system(size: 20))
-                                    Image("locked_icon")
-                                        .resizable().scaledToFit().frame(width: 20, height: 20).hidden(room.password)
-                                    Spacer()
-                                    VStack(){
-                                        Text("\(room.level)*\(room.level)")
-                                        Text("0/\(room.maxParticipant)")
-                                    }
-                                }
-                            }.padding(10)
-                        }
-                    }
-                }
+                RoomList()
                 HStack{
                     Button{
                         
@@ -56,15 +38,11 @@ struct HomeView: View {
                         Text("혼자하기")
                     }
                 }
-        
+            }
         }
-    }
+    
 }
-extension View{
-    func hidden(_ shouldHide: String?) -> some View {
-        opacity(shouldHide != nil ? 0 : 1)
-    }
-}
+
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
